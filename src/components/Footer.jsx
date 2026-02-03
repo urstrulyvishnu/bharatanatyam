@@ -8,7 +8,7 @@ const Footer = () => {
                 <p style={{ maxWidth: '600px', marginBottom: '2rem', opacity: 0.9 }}>
                     Celebrating the divine ancient art form of India. Expressing stories through Bhava, Raga, and Tala.
                 </p>
-                <div style={{ display: 'flex', gap: '2rem', marginBottom: '2rem' }}>
+                <div style={{ display: 'flex', gap: '1.5rem', marginBottom: '2rem', flexWrap: 'wrap', justifyContent: 'center' }}>
                     <span>Home</span>
                     <span>History</span>
                     <span>Mudras</span>

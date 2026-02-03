@@ -138,20 +138,44 @@ const Mudras = () => {
                 </AnimatePresence>
             </div>
             <style>{`
-        @media (min-width: 768px) {
-            .glass-panel[style*="max-width: 800px"] > div {
-                flex-direction: row !important;
-            }
-             .glass-panel[style*="max-width: 800px"] > div > div:first-child {
-                width: 40% !important;
-                height: auto !important;
-                min-height: 400px;
-            }
-            .glass-panel[style*="max-width: 800px"] > div > div:last-child {
-                width: 60% !important;
-            }
-        }
-      `}</style>
+                @media (max-width: 768px) {
+                    .page-padding {
+                        padding-top: 6rem !important;
+                    }
+                    h1 {
+                        font-size: 2.2rem !important;
+                    }
+                    .glass-panel[style*="max-width: 800px"] {
+                        width: 95% !important;
+                        max-height: 85vh !important;
+                    }
+                    .glass-panel[style*="max-width: 800px"] > div {
+                        flex-direction: column !important;
+                    }
+                    .glass-panel[style*="max-width: 800px"] > div > div:first-child {
+                        width: 100% !important;
+                        height: 250px !important;
+                        min-height: auto !important;
+                    }
+                    .glass-panel[style*="max-width: 800px"] > div > div:last-child {
+                        width: 100% !important;
+                        padding: 1.5rem !important;
+                    }
+                }
+                @media (min-width: 769px) {
+                    .glass-panel[style*="max-width: 800px"] > div {
+                        flex-direction: row !important;
+                    }
+                    .glass-panel[style*="max-width: 800px"] > div > div:first-child {
+                        width: 40% !important;
+                        height: auto !important;
+                        min-height: 400px;
+                    }
+                    .glass-panel[style*="max-width: 800px"] > div > div:last-child {
+                        width: 60% !important;
+                    }
+                }
+            `}</style>
         </div>
     );
 };
